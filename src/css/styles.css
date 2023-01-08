@@ -3,12 +3,12 @@
 }
 
 body {
+  background-image: radial-gradient(circle at 1px 1px, gray 1px, transparent 0);
+  background-size: 40px 40px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
   line-height: 1.5;
 }
 
@@ -17,4 +17,47 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  border: 3px solid black;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 5px;
 }
+
+#search-box:focus,
+#search-box:active {
+  border: 3px solid rgb(10, 149, 241);
+}
+
+
+.country-list {
+  list-style: none;
+}
+
+.country-list li {
+  margin-top: 1em;
+}
+
+#country-flag-and-name {
+  display: flex;
+  align-items: center;
+}
+
+#country-official-name {
+  padding: 5px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+
+ul {
+  padding: 10px;
+}
+
+
